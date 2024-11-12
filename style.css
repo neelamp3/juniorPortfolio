@@ -4,14 +4,16 @@
   padding: 0;
 }
 
+
 body {
   font-family: Arial, sans-serif;
-  background-image: url(Bgrnd.jpeg);
-  background-size: cover;
-  background-attachment: fixed;
-  color: #ffffff;
+    background-image: url('bgrnd.jpeg');
+    background-size: cover; 
+    background-repeat: no-repeat;   
+    background-attachment: fixed;   
+    background-position: center;  
+    color: #ffffff;
 }
-
 /* Banner */
 .banner {
   background-color: #000000;
