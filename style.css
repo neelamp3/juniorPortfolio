@@ -1,70 +1,75 @@
+/* Global Styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-
 body {
   font-family: Arial, sans-serif;
-  background-image: url(Bgrnd.jpeg);
+  background-image: url('Bgrnd.jpeg');
   background-size: cover;
   background-attachment: fixed;
   color: #ffffff;
 }
-/* Banner */
+
+/* Banner Section */
 .banner {
-  background-color: #b3a1c9;
-  color: #c1b4d1;
-  padding: 15px;
+  background-color: #9b79b9; /* Softer purple tone */
+  color: #f0e5d8; /* Light beige for contrast */
+  padding: 20px;
   text-align: left;
-  font-family: fantasy;
+  font-family: 'Fantasy', sans-serif;
   text-transform: capitalize;
-  text-shadow: 3px 3px 3px #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   border: 3px solid #ffffff;
-  box-shadow: 8px 8px 8px #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* Navigation Bar */
 .navbar {
   display: flex;
   justify-content: center;
-  background-color: #575757;
+  background-color: #3a3a3a; /* Dark grey for contrast */
   padding: 10px 0;
 }
 
 .navbar a {
-  color: #ffffff;
+  color: #f0e5d8; /* Light beige for links */
   text-decoration: none;
   padding: 14px 20px;
   font-size: 17px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
   border: 2px solid transparent;
 }
 
 .navbar a:hover {
-  background-color: #575757;
+  background-color: #8000ff; /* Purple hover background */
+  color: #ffffff; /* White text on hover */
   border-color: #8000ff;
 }
+
+/* Main Container */
 .container {
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
   color: #ffffff;
-  border: 5px solid #ffffff;
+  border: 5px solid #8000ff; /* Purple border */
   margin: 30px auto;
   padding: 20px;
   width: 80%;
   max-width: 800px;
   border-radius: 8px;
-  box-shadow: 1px 10px 10px #000000;
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.5);
   text-align: left;
 }
 
-/* Info Sections */
+/* Info Section */
 .info-section {
-  border: 2px solid #8000ff;
+  border: 2px solid #8000ff; /* Purple border */
   padding: 15px;
   margin: 15px 0;
   border-radius: 4px;
+  background-color: rgba(67, 39, 99, 0.6); /* Semi-transparent purple */
 }
 
 .info-section h2 {
@@ -81,15 +86,16 @@ img {
   display: block;
 }
 
-/* Individual Section IDs */
+/* Links with unique IDs */
 #cfu1, #cfu2, #cfu3, #cfu4, #Family, #Friends, #Movies, #hobbies {
   border: 2px solid #8000ff;
   padding: 5px;
   display: block;
   margin: 1px;
-  background-color: rgba(67, 39, 99, 0.5);
+  background-color: rgba(67, 39, 99, 0.6);
   color: #ffffff;
 }
+
 #cfu5 {
   border: 2px solid #8000ff;
   padding: 5px;
@@ -97,14 +103,15 @@ img {
   margin: 1px;
   color: #ffffff;
   text-decoration: none;
-  background-color: rgba(67, 39, 99, 0.5);
+  background-color: rgba(67, 39, 99, 0.6);
 }
+
 #cfu1:hover, #cfu2:hover, #cfu3:hover, #cfu4:hover, #cfu5:hover {
-  background-color: #575757;
+  background-color: #8000ff; /* Purple hover effect */
 }
 
 .wave {
-  background-color: rgba(67, 39, 99, 0.5);
+  background-color: rgba(67, 39, 99, 0.6); /* Purple wave background */
   color: #ffffff;
   height: 75px;
   overflow: hidden;
@@ -119,6 +126,7 @@ img {
   margin-bottom: 15px;
   color: #ffffff;
 }
+
 .contact-info {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 30px;
@@ -130,15 +138,14 @@ img {
   border-radius: 8px;
   color: #ffffff;
   text-align: center;
-  box-shadow: 1px 10px 10px #000000;
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Style for email-info container */
+/* Email Styling */
 .email-info {
   margin-top: 20px;
 }
 
-/* Each email section styled separately */
 .email-section {
   margin-bottom: 20px;
   text-align: left;
@@ -146,7 +153,6 @@ img {
   border-radius: 5px;
 }
 
-/* Style for email titles and icons */
 .email-section h3 {
   font-size: 1.2em;
   color: #ffffff;
@@ -166,7 +172,7 @@ img {
   display: inline;
 }
 
-/* Gallery container */
+/* Gallery Section */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -175,7 +181,6 @@ img {
   margin: 20px;
 }
 
-/* Each image box */
 .image-box {
   width: 200px;
   text-align: center;
@@ -184,17 +189,15 @@ img {
   border-radius: 8px;
   padding: 10px;
   color: #ffffff;
-  box-shadow: 1px 10px 10px #000000;
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Styling for images */
 .image-box img {
   width: 100%;
   height: auto;
   border-radius: 5px;
 }
 
-/* Description styling */
 .description {
   color: #ffffff;
   font-size: 12px;
@@ -204,29 +207,27 @@ img {
   margin-top: 5px;
 }
 
+/* Project Section */
 #project1, #project2, #project3, #project4, #project5 {
   border: 2px solid #8000ff;
   padding: 5px;
   display: block;
   margin: 1px;
-  background-color: rgba(67, 39, 99, 0.5);
+  background-color: rgba(67, 39, 99, 0.6);
   color: #ffffff;
 }
 
-/* On hover, allow scrolling */
 .wave:hover {
   max-height: 400px;
   overflow-y: auto;
 }
 
-/* Project header styling */
 .wave h2 {
   margin-top: 0;
   font-size: 1.6em;
   color: #ffffff;
 }
 
-/* Link styling within wave */
 .wave a {
   color: #ffffff;
   text-decoration: none;
@@ -239,24 +240,21 @@ img {
   text-decoration: underline;
 }
 
-/* Paragraph styling within wave */
 .wave p {
   margin: 15px 0 0;
   line-height: 1.6;
   color: #ffffff;
 }
 
-/* Adjusted styling for links and hover effects */
 .wave a:visited {
   color: #ffffff;
 }
 
 p {
-  color: #ffffff; 
-  transition: color 0.3s; 
+  color: #ffffff;
+  transition: color 0.3s;
 }
 
-
 p:hover {
-  color: #ffcc00; 
+  color: #ffcc00; /* Gold color for hover effect */
 }
